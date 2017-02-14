@@ -25,7 +25,7 @@ files for OCUM and dependencies are expected in a YUM repository that you
 can customize by editing `OCUM.repo`.
 
 If you do not have a YUM repository available, you can use [ybizeul/yum](https://hub.docker.com/r/ybizeul/yum/) docker
-image to run one in a container, then run `docker inspect` to retrieve container :
+image to run one in a container, then run `docker inspect` to retrieve container IP :
 
 ```
 $ docker ps
@@ -35,7 +35,7 @@ $ docker inspect --format '{{ .NetworkSettings.IPAddress }}' e2712c5b19c1
 172.17.0.3
 ```
 
-IP address and configure it into `OCUM.repo` :
+You can now configure it into `OCUM.repo` :
 
 ```
 [ocum]
