@@ -1,0 +1,3 @@
+if [ "x$1" == "xdaemon-reload" ]; then exit 0; fi 
+if [ "x$1" == "xstart" -a "x$2" == "xrp" ]; then service $2 start; exit 0; fi
+systemctl_ $@
