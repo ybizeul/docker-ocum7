@@ -30,4 +30,24 @@ IP address and configure it into `OCUM.repo`.
 
 Then you can run `docker build .`
 
+## Example content of the yum repository
+
+The following files are required for a successful build :
+
+```
+mysql-community-client-5.6.35-2.el6.x86_64.rpm
+mysql-community-common-5.6.35-2.el6.x86_64.rpm
+mysql-community-libs-5.6.35-2.el6.x86_64.rpm
+mysql-community-libs-compat-5.6.35-2.el6.x86_64.rpm
+mysql-community-server-5.6.35-2.el6.x86_64.rpm
+netapp-application-server-7.1.0-2016.11.J2293.x86_64.rpm
+netapp-ocum-7.1-x86_64.rpm
+netapp-platform-base-7.1.0-2016.11.J2293.el6.x86_64.rpm
+node.x86_64.rpm
+ocie-au-7.1.0-2016.05.J2327.x86_64.rpm
+ocie-server-7.1.0-2016.05.J2327.x86_64.rpm
+ocie-serverbase-7.1.0-2016.11.J2293.x86_64.rpm
+rp.x86_64.rpm
+```
+
 
