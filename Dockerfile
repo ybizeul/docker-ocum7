@@ -27,7 +27,7 @@ RUN mv /usr/bin/systemctl /usr/bin/systemctl_
 # rely on systemctl and the fallback is to use start-stop-daemon not present on RHEL
 # or Centos 7
 
-# Wwe intercept systemctl calls to run the legacy "service" command instead
+# We intercept systemctl calls to run the legacy "service" command instead
 # systemctl daemon-reload
 # systemctl start rp
 
@@ -82,6 +82,7 @@ service ocieau start\n\
 service ocie start\n\
 tail -f /var/log/ocum/*' > /start.sh; chmod 755 /start.sh
 
+# Avoid initial wizard run and setup null smtp settings
 RUN mkdir -p /opt/netapp/ocum/etc;echo -e "autosupport.enabled = false\n\
 mail.smtp.host = localhost\n\
 mail.smtp.port = 25\n\
