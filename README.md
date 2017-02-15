@@ -1,7 +1,6 @@
 ## Introduction
 
-This project is used to build a docker image for NetApp OCUM 7.x, successfully
-tested with OCUM 7.1.
+This project is used to build a docker image for NetApp OCUM 7.1.
 
 More informations about OCUM can be found here :
 
